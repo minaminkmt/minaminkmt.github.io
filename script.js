@@ -71,8 +71,8 @@ window.addEventListener('scroll', () => {
 
 updateScale();
 
-import * as THREE from 'https://cdn.skypack.dev/three@0.124.0';
-import { RGBELoader  } from 'https://cdn.skypack.dev/three@0.124.0/examples/jsm/loaders/RGBELoader.js';
+import * as THREE from 'https://cdn.skypack.dev/three@0.134.0';
+import { RGBELoader  } from 'https://cdn.skypack.dev/three@0.134.0/examples/jsm/loaders/RGBELoader.js';
 import { OBJLoader } from 'https://cdn.skypack.dev/three@0.134.0/examples/jsm/loaders/OBJLoader.js';
 
 var renderer = new THREE.WebGLRenderer({ canvas : document.getElementById('canvas'), antialias:true, alpha: true });
@@ -161,7 +161,7 @@ var update = function() {
   group.rotation.y += 0.01;
 
   // keep the camera look at 0,0,0
-  camera.lookAt( 0, 0, 0 );
+  camera.lookAt( 0, 0.5, 0 );
 }
 
 function onWindowResize() {
