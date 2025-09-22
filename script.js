@@ -71,8 +71,8 @@ window.addEventListener('scroll', () => {
 
 updateScale();
 
-import * as THREE from 'https://cdn.skypack.dev/three@0.134.0';
-import { RGBELoader  } from 'https://cdn.skypack.dev/three@0.134.0/examples/jsm/loaders/RGBELoader.js';
+import * as THREE from 'https://cdn.skypack.dev/three@0.124.0';
+import { RGBELoader  } from 'https://cdn.skypack.dev/three@0.124.0/examples/jsm/loaders/RGBELoader.js';
 import { OBJLoader } from 'https://cdn.skypack.dev/three@0.134.0/examples/jsm/loaders/OBJLoader.js';
 
 var renderer = new THREE.WebGLRenderer({ canvas : document.getElementById('canvas'), antialias:true, alpha: true });
@@ -135,8 +135,6 @@ objloader.load(
     },
 );
 
-console.log(objloader)
-
 // RESIZE
 window.addEventListener( 'resize', onWindowResize );
 
@@ -161,7 +159,7 @@ var update = function() {
   group.rotation.y += 0.01;
 
   // keep the camera look at 0,0,0
-  camera.lookAt( 0, 0.5, 0 );
+  camera.lookAt( 0, 0, 0 );
 }
 
 function onWindowResize() {
@@ -177,3 +175,12 @@ function animate() {
 }
 
 requestAnimationFrame(animate);
+
+// model not working -> why?
+// lack of access
+const geometry = new THREE.BoxGeometry( 1, 1, 1 ); 
+const material = new THREE.MeshBasicMaterial( {color: 0x00ff00} ); 
+const object = new THREE.Mesh( geometry, material1 ); 
+object.scale.setScalar( 20 );
+object.position.set( 0, -0.25, 0 );
+group.add( object );
