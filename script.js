@@ -175,12 +175,3 @@ function animate() {
 }
 
 requestAnimationFrame(animate);
-
-// model not working -> why?
-// lack of access
-const geometry = new THREE.BoxGeometry( 1, 1, 1 ); 
-const material = new THREE.MeshBasicMaterial( {color: 0x00ff00} ); 
-const object = new THREE.Mesh( geometry, material1 ); 
-object.scale.setScalar( 20 );
-object.position.set( 0, -0.25, 0 );
-group.add( object );
