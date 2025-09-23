@@ -16,6 +16,12 @@ html,body {
     text-align: center;
 }
 
+.landing-page{
+    height: 100vh;
+    width: 100vw;
+}
+
+
 .canvas-container {
     position: absolute;
     top: 50%;
@@ -53,7 +59,7 @@ html,body {
     z-index: 1;
 }
 
-#text-behind-blur{
+#text-behind-blur, #profile-text-behind-blur, #gallery-text-behind-blur{
     color: var(--headline-color);
     filter: blur(7.5px);
     -webkit-filter: blur(7.5px);
@@ -67,8 +73,37 @@ html,body {
     -webkit-text-stroke: 2px var(--headline-color);
     z-index: 3;
 }
-
-.more-content{
-  height: 500vh;
+.profile{
+  height: 100vh;
   width: 100vw;
+}
+
+.gallery{
+    height: 100vh;
+    width: 100vw;
+}
+
+.chapter {
+    color: var(--headline-color);
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    justify-content: baseline;
+    font-size: clamp(24px, 20vw, 70px);
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 10px;
+    line-height: 0.8;
+    z-index: 0;
+}
+
+#profile, #profile-text-behind-blur, #gallery, #gallery-text-behind-blur {
+    position: absolute;
+    text-align: start;
+}
+
+.bottom{
+    height: 10vh;
+    width: 100vw;
+    background-color: hotpink;
+    color: white;
 }
