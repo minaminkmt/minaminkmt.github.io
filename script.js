@@ -126,13 +126,19 @@ const material1 = new THREE.MeshStandardMaterial({
 // Load the model
 const objloader = new OBJLoader();
 objloader.load(
-    'https://raw.githubusercontent.com/miroleon/peace-of-mind/main/assets/buddha.obj',
+    '/assets/dog.obj',
  (object) => {
-        object.children[0].material = material1;
-        object.scale.setScalar( 20 );
-        object.position.set( 0, -0.25, 0 );
+        // object.children[0].material = material1;
+        
+        object.traverse( function ( child ) {
+    if ( child.isMesh ) {
+        child.material = material1;
+    }
+} );
+        objecßt.scale.setScalar( 3 );
+        object.position.set( 2, -0.2, 0 );
         group.add(object);
-    },
+    },ß
 );
 
 // RESIZE
