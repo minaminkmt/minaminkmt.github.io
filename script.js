@@ -135,10 +135,10 @@ objloader.load(
         child.material = material1;
     }
 } );
-        objecßt.scale.setScalar( 3 );
+        object.scale.setScalar( 3 );
         object.position.set( 2, -0.2, 0 );
         group.add(object);
-    },ß
+    },
 );
 
 // RESIZE
