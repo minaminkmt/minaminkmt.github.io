@@ -137,3 +137,18 @@ html,body {
     z-index:1;
     translate: (0%, 10%);
 }
+
+.content{
+    height: 80%;
+}
+.dog image {
+    max-height: 100%;
+}
+
+.book image {
+    max-height: 100%;
+}
+
+.phone image {
+    max-height: 100%;
+}
