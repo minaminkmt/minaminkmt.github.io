@@ -119,6 +119,18 @@ html,body {
     text-align: start;
 }
 
+.description button {
+            background-color: hotpink;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
 .bottom{
     height: 10vh;
     width: 100vw;
@@ -126,9 +138,12 @@ html,body {
     color: white;
 }
 .content-container{
-    height: 80%;
+    height: 80vh;
     width: 100vw;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
 }
 
 .content {
@@ -137,9 +152,8 @@ html,body {
     flex-direction: row;
     height: 100%;
     width: 1000vw;
-     border: 2px solid #333;
-    overflow-x: auto;
-    overflow-y: hidden;
+     /* border: 2px solid #333; */
+    
 }
 
 #img{
@@ -147,6 +161,16 @@ html,body {
     translate: (0%, 10%);
 }
 
+.dog, .book, .phone {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            max-height: 100%;
+            flex-shrink: 0; /* Prevent items from shrinking */
+        }
+        
+        .dog:hover, .book:hover, .phone:hover {
+            transform: scale(1.02);
+        }
 
 .dog,.book,.phone{
     max-height: 100%;
@@ -160,5 +184,5 @@ html,body {
 }
 
 .phone image {
-    max-height: 100%;
+    max-height: 90%;
 }

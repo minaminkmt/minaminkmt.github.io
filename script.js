@@ -181,3 +181,8 @@ function animate() {
 }
 
 requestAnimationFrame(animate);
+
+dog = document.getElementById('dog')
+book = document.getElementById('book')
+phone = document.getElementById('phone')
+
