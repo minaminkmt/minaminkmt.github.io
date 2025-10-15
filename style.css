@@ -125,12 +125,21 @@ html,body {
     background-color: hotpink;
     color: white;
 }
+.content-container{
+    height: 80%;
+    width: 100vw;
+    border: 2px solid black;
+}
 
 .content {
     color: black;
     display: flex;
     flex-direction: row;
-
+    height: 100%;
+    width: 1000vw;
+     border: 2px solid #333;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 #img{
@@ -138,8 +147,9 @@ html,body {
     translate: (0%, 10%);
 }
 
-.content{
-    height: 80%;
+
+.dog,.book,.phone{
+    max-height: 100%;
 }
 .dog image {
     max-height: 100%;
