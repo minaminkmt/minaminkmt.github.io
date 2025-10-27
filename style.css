@@ -168,7 +168,7 @@ html,body {
             flex-shrink: 0; /* Prevent items from shrinking */
         }
         
-        book:hover, .phone:hover, .candy:hover {
+        .sbook:hover, .phone:hover, .candy:hover {
             transform: scale(1.02);
         }
 
