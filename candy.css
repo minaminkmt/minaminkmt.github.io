@@ -64,3 +64,8 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+#candyland {
+  color: #d41ba6;
+  text-decoration: none;
+}
