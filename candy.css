@@ -48,6 +48,7 @@
   bottom: 8px;
   width: 100%;
   text-align: center;
+  text-shadow: 2px 2px 5px #ed00d5;
 }
 
 .footer {
@@ -68,4 +69,5 @@
 #candyland {
   color: #d41ba6;
   text-decoration: none;
+  text-shadow: 1px 1px 5px rgb(202, 1, 199);
 }
