@@ -152,8 +152,8 @@ html,body {
     color: black;
     display: flex;
     flex-direction: row;
-    height: 100%;
-    width: 1000vw;
+    height: 80%;
+    width: 350vw;
      /* border: 2px solid #333; */
     
 }
@@ -163,18 +163,19 @@ html,body {
     translate: (0%, 10%);
 }
 
-.book, .phone, .candy {
+.book, .phone, .candy, .MM{
             cursor: pointer;
             transition: transform 0.3s ease;
             max-height: 100%;
             flex-shrink: 0; /* Prevent items from shrinking */
+            
         }
         
-        .book:hover, .phone:hover, .candy:hover {
+        .book:hover, .phone:hover, .candy:hover, .MM:hover {
             transform: scale(1.02);
         }
 
-.dog,.book,.phone, .candy {
+.dog,.book,.phone, .candy, .MM {
     max-height: 100%;
 }
 .dog image {
@@ -186,10 +187,15 @@ html,body {
 }
 
 .phone image {
-    max-height: 70%;
+    max-height: 100%;
+    width: 60%;
 }
 
 .candy image {
+    max-height: 100%;
+}
+
+.MM image {
     max-height: 100%;
 }
 
@@ -204,9 +210,24 @@ html,body {
     padding: 20px;
 }
 
-.nav-links a {
+.nav-links a{
     text-decoration: none;
     color: hotpink;
     font-weight: bold;
     padding-right: 20px;
+}
+
+a.CV{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+a.CV:hover{
+    color: hotpink;
+}
+
+.work_title{
+    text-align: left;
+    margin-left: 20%;
 }
